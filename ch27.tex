@@ -1,0 +1,63 @@
+\documentclass[12pt,twosided,titlepage]{article}
+
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{psfrag}
+\usepackage{cancel}
+\usepackage{fullpage}
+\usepackage{palatino} % this is the recommended font
+% your other packages go here
+\usepackage{amsmath,epsfig,latexsym,amssymb,rotating}
+% Define some useful tools for these notes
+\newenvironment{thinlist}[1][\labelitemi]{\begin{list}{#1}{\topsep=\smallskipamount \parsep=\smallskipamount \itemsep=\smallskipamount}}{\end{list}}
+\renewcommand{\baselinestretch}{2}
+% your latex commands go here
+
+\begin{document}
+\begin{tabular}{|c c c|}
+\hline
+%& &\\
+& Lecture 2 & Jan. 2-2006 \\
+%& &\\
+& \textbf{Computational Inference}  &  \\
+& {\small STAT 440 / 840, CM 461} &  \\
+%& &\\
+Lecture: Ali Ghodsi & & Scribes: your name \\
+\hline
+\end{tabular}
+
+%Your note here
+
+% Add a table. This a table of 3 rows and 4 columns
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  1 & 2 & 3 & 4 \\
+  \hline
+  5 & 6 & 7 & 8 \\
+  12 & 11 & 10 & 9 \\
+  \hline
+
+  % Add a figure. Make your figures in eps or ps format
+\begin{figure}[h]
+\center
+\includegraphics[width=0.65\columnwidth,
+ keepaspectratio]{file name.ps}
+\caption{ } \label{fig1}
+\end{figure}
+
+%Add a formula
+\begin{eqnarray}
+  p(x) = \prod_i~~ f_i(x_i, x_{{\pi}_i} )
+\end{eqnarray}
+
+or
+
+\[
+  p(x) = \prod_i~~ f_i(x_i, x_{{\pi}_i} )
+\]
+
+\end{tabular}
+
+
+\end{document}
